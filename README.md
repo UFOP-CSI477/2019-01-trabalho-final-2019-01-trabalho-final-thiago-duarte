@@ -18,19 +18,19 @@ particularidades de seu pedido. o gerenciador podera ver os pedidos dos clientes
 ### 2. Escopo
 
   Este projeto terá as seguintes funcionalidades:
-  *o cliente poderá escolher os diversos tipos de bolo apresentados na pagina inicial
-  *ao escolher ele poderá especificar as especificidades do bolo cmomo tamanho formato recheio etc
-  *podera naverar utilizando navbar
-  *pode pesquisar na barra de pesquisa
-  *o gerente podera administrar ao ofertas e promoções disponibilizadas pelo site
-  *pode ser vizualizado os pedidos dos clientes
+  * o cliente poderá escolher os diversos tipos de bolo apresentados na pagina inicial
+  * ao escolher ele poderá especificar as especificidades do bolo cmomo tamanho formato recheio etc
+  * podera naverar utilizando navbar
+  * pode pesquisar na barra de pesquisa
+  * o gerente podera administrar ao ofertas e promoções disponibilizadas pelo site
+  * pode ser vizualizado os pedidos dos clientes
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
   Neste trabalho não serão considerados:
-  *pormenores de pagamento, como gerar boletos etc.
-  *criaçao das paginas de redes sociais da confeitaria.
+  * pormenores de pagamento, como gerar boletos etc.
+  * criaçao das paginas de redes sociais da confeitaria.
   *
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
