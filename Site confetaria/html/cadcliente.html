@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/cadastro.css" >
 	<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script  src="../js/vform.js"></script>	
 
  </head>
 	
@@ -15,20 +16,26 @@
 	<div class="cadastro">
 	  <div class="container">
 		<h1 class="amarelo castel">Faça seu Cadastro</h1>
-		<form action="" method="post" id="formcad">
+		<form action="#" method="post" id="formcad" onsubmit="return validar()">
 		
 		 <div class="form-group">
-		  <label for="nome" id="labnome">Nome</label>
+		  <label for="nome">Nome</label>
 		  <input class="form-control" type="text" name="nome" id="nome" placeholder="Informe o nome">
-		   <div id="alertanome" style="display: none" class="alert alert-danger">
-				<span>Preencha o nome!</span>
-			</div>
+		  
+		  <div id="alertanome" style="display: none" class="alert alert-danger">
+					<span>Preencha o nome!</span>
+		  </div>
+		  
 		 </div>
 		
 		 <div class="form-group">
 		  <label for="email">Email</label>
 		  <input type="email" class="form-control" id="email" placeholder="name@example.com">
-		  <span class='msg-erro msg-email'></span>
+		  
+		  <div id="alertaemail" style="display: none" class="alert alert-danger">
+					<span>o email corretamente!</span>
+		  </div>
+		  
 		 </div>
 		
 		 <div class="form-group">
@@ -56,7 +63,6 @@
 		  <input type="radio" name="genero" value="M" id="masculino" class="form-check-input">
 		  <label for="masculino" class="form-check-label">Masculino</label>
 		 </div>
-
 		
 		 <div class="form-group form-check">
 		  <input type="radio" name="genero" value="NB" id="naobinario" class="form-check-input">
@@ -102,14 +108,14 @@
 		
 		 </div>
 		
-		 <button type="submit" class="btn btn-success btn-md" id="botao" onclick="validar()" >Concluir</button>
+		 <button type="submit" class="btn btn-success btn-md" id="botao">Concluir</button>
 
 	    </form>
 		<br>
 	
 	  </div>
 	</div>
-	<script  src="../js/vform.js"></script>	
+	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
