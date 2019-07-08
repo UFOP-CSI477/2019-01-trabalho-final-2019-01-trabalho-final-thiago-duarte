@@ -16,10 +16,10 @@
 	<div class="cadastro">
 	  <div class="container">
 		<h1 class="amarelo castel">Faça seu Cadastro</h1>
-		<form action="#" method="post" id="formcad" onsubmit="return validar()">
+		<form action="#" method="post" name="formcad" id="formcad" onsubmit="return validar()">
 		
 		 <div class="form-group">
-		  <label for="nome">Nome</label>
+		  <label id="labnome" for="nome">Nome</label>
 		  <input class="form-control" type="text" name="nome" id="nome" placeholder="Informe o nome">
 		  
 		  <div id="alertanome" style="display: none" class="alert alert-danger">
@@ -29,84 +29,74 @@
 		 </div>
 		
 		 <div class="form-group">
-		  <label for="email">Email</label>
-		  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+		  <label  id="labemail" for="email" >Email</label>
+		  <input class="form-control" type="email"  name="email" id="email"placeholder="name@example.com">
 		  
 		  <div id="alertaemail" style="display: none" class="alert alert-danger">
-					<span>o email corretamente!</span>
+					<span>Preencha o email corretamente!</span>
 		  </div>
 		  
 		 </div>
 		
 		 <div class="form-group">
-		  <label for="senha">Senha</label>
-		  <input class="form-control form-control-sm" type="password" name="senha" id="senha" placeholder="Informe sua senha">
-		  <span class='msg-erro msg-senha'></span>
+		  <label id="labsenha" for="senha">Senha</label>
+		  <input class="form-control" type="password" name="senha" id="senha" placeholder="Informe sua senha">
+		  <div id="alertasenha" style="display: none" class="alert alert-danger">
+					<span>Preencha a senha com 6 com mínimo cararteres</span>
+		  </div>
 		 </div>
+
 		 <div class="form-group">
-		  <label for="confirma">Confirme sua Senha</label>
-		  <input class="form-control form-control-sm" type="password" name="confirma" id="confirma" placeholder="Confirme a senha">
-		  <span class='msg-erro msg-confirma'></span>
-		 </div>
-		
-		 
-		
-		 <h3>Sexo</h3>
-		 
-		 <div class="form-group form-check">
-		  <input type="radio" name="genero" value="F" id="feminino" class="form-check-input">
-		  <label for="feminino" class="form-check-label">Feminino</label>
-		
-		 </div>
-		
-		 <div class="form-group form-check">
-		  <input type="radio" name="genero" value="M" id="masculino" class="form-check-input">
-		  <label for="masculino" class="form-check-label">Masculino</label>
-		 </div>
-		
-		 <div class="form-group form-check">
-		  <input type="radio" name="genero" value="NB" id="naobinario" class="form-check-input">
-		  <label for="naobinario" class="form-check-label">Não Binario</label>
-		
+		  <label id="labconfirma" for="confirma">Confirme sua Senha</label>
+		  <input class="form-control" type="password" name="confirma" id="confirma" placeholder="Confirme a senha">
+		  <div id="alertaconfirma" style="display: none" class="alert alert-danger">
+					<span>A senha nao bate</span>
+		  </div>
 		 </div>
 		
 		<h5>Informe seu Endereço</h5>
 		 <div class="form-group row">
 		    <div class="col-4">
-			<label for="cidade">Cidade</label>
+			<label id="labcidade" for="cidade">Cidade</label>
 			<select name="cidade" id="cidade" class="custom-select">
-			 <option value="0">Selecione:</option>
-			 <option value="1">Itabira</option>
-			 <option value="2">João Monlevade</option>
-			 <option value="3">Belo Horizonte</option>
-			
-			 </select>
+			  <option value="0">Selecione</option>
+			  <option value="1">Itabira</option>
+			  <option value="2">João Monlevade</option>
+			  <option value="3">Belo Horizonte</option>
+			</select>
+			<div id="alertacidade" style="display: none" class="alert alert-danger">
+					<span>Selecione uma cidade</span>
+		    </div>
 			</div>
 			<div class="form-group col-8">
-		     <label for="rua">Rua</label>
-		     <input class="form-control form-control" type="text" name="rua" id="rua">
+		     <label id="labrua" for="rua">Rua</label>
+		     <input class="form-control" type="text" name="rua" id="rua">
+		     <div id="alertarua" style="display: none" class="alert alert-danger">
+					<span>Preencha rua</span>
+		     </div>
 		    </div>
 		 </div>
 		 
 		 
 		 <div class="form-group row">
 		  <div class="col-4">
-		   <label for="bairro">Bairro</label>
+		   <label id="labbairro" for="bairro">Bairro</label>
 		   <input class="form-control" type="text" name="bairro" id="bairro">
+		   <div id="alertabairro" style="display: none" class="alert alert-danger">
+					<span>Preencha o bairro</span>
+		     </div>
 		  </div>  
           <div class="col-2">
-		   <label for="numero">Numero</label>
+		   <label id="labnumero" for="numero">Numero</label>
 		   <input class="form-control" type="text" name="numero" id="numero">
+		   <div id="alertanumero" style="display: none" class="alert alert-danger">
+					<span>Preencha o Numero</span>
+		     </div>
 		  </div>
 		  
 		 </div>		 
 		 
-		 <div class="custom-control custom-switch">
-		
-			<input type="checkbox" id="aceite" class="custom-control-input">
-			<label for="aceite" class="custom-control-label">Aceito os termos</label>
-		
-		 </div>
+		 
 		
 		 <button type="submit" class="btn btn-success btn-md" id="botao">Concluir</button>
 
