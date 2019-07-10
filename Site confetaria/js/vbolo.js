@@ -65,6 +65,37 @@ function vbolo(){
 			document.getElementById('labcobertura').classList.add("text-success");
 			return true;
 		}
-		
-
 }
+function atualizarPreço()
+{
+var selectTamanho = window.document.querySelector("#tamanho");
+var inputPreço = window.document.querySelector("#preco");
+
+selectTamanho.addEventListener("input", preço);
+inputPreço.value = "R$00,00";
+
+function preço()
+{
+  if (selectTamanho.value == 0)
+  {
+    inputPreço.value = "R$00,00";
+  }
+
+  else if(selectTamanho.value == 1)
+  {
+    inputPreço.value = "R$60,00";
+  }
+
+  else if(selectTamanho.value == 2)
+  {
+    inputPreço.value = "R$100,00";
+  }
+
+  else if(selectTamanho.value == 3)
+  {
+    inputPreço.value = "R$160,00";
+  }
+}
+}
+
+window.addEventListener("load", atualizarPreço);
