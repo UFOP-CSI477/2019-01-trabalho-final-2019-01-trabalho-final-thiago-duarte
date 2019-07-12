@@ -5,7 +5,13 @@
 --------------
 
 <!--resumo do trabalho-->
-
+### Istruçoes do site
+  * o login na pagina do administrador é feito por 
+  *   Email:admin@admin   Senha: admin
+  * para efetuar a compra o cliente tem que fazer o login, ou seja ser cadastrado.
+  * para cadastrar o cleinte, ou logar no admim acesse o menu dropdown no navbar.
+  * a pagina do administrador tem todo o Crud para clientes Produtos e pedidos.
+  
 ### Resumo
   O trabalho a ser desenvolvido sera um site de uma confeitaria, neste o cliente poderá navegar e escolher diferentes tipos de bolo fornecidos pela confeitaria, ao clicar em um dos tipos de bolo ele sera direcionado para pagina de preferencias en==onde ira escolher as
 particularidades de seu pedido. o gerenciador podera ver os pedidos dos clientes, disponiblizar promoçoes e novos modelos de produto.
