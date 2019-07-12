@@ -1,0 +1,47 @@
+﻿instrução de instalação:
+
+
+Instrução:
+
+
+
+.primeiro crie um arquivo .env no diretorio do projeto
+(no diretorio ja se encontra um arquivo .env.example 
+voce pode apenas renomear ele para .env)
+
+
+no arquivo .env coloque suas configurações de banco de dados:
+
+DB_CONNECTION=mysql
+
+DB_HOST=127.0.0.1
+
+DB_PORT=3306
+
+DB_DATABASE=nomedabasededados
+
+DB_USERNAME=usuariodobanco
+
+DB_PASSWORD=senhadobanco
+
+
+apos isso execute:
+composer install
+
+php artisan key:generate
+
+se voce ja tiver as tabelas na base de dados pode pular esta etapa, caso nao tenha, 
+execute:
+php artisan migrate
+se aparecer "nothing to migrate" 
+execute:
+php artisan migrate:fresh
+
+
+
+por fim execute:
+php artisan serve
+
+
+para testar acesse a url:
+http://localhost:8000
